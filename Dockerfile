@@ -22,7 +22,7 @@
 #
 
 
-FROM nvidia/cuda:latest
+FROM nvidia/cuda:11.4.0-devel-ubuntu20.04
 LABEL maintainer "NVIDIA CORPORATION <cudatools@nvidia.com>"
 ENV APPROOT="/usr/src/matmultiply"
 COPY ["matmultiply", "${APPROOT}"]
